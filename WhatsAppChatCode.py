@@ -109,8 +109,8 @@ def jobsendMessageAt1900():
 
 
 # schedule.every().day.at("16:37").do(createGroup)
-schedule.every().day.at("19:20").do(jobsendMessageAt1850)
-schedule.every().day.at("19:21").do(jobsendMessageAt1900)
+schedule.every().day.at("19:55").do(jobsendMessageAt1850)
+schedule.every().day.at("19:55").do(jobsendMessageAt1900)
 
 while True:
     schedule.run_pending()
